@@ -16,10 +16,11 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1.2rem 10%;
+   padding: 1rem ;
+   
     background: #081b29;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
     z-index: 100;
 }
@@ -27,6 +28,7 @@ body{
 .logo{
     position: relative;
     font-size: 2rem;
+    margin-left: 10rem;
     color:#0ef;
     text-decoration: none;
     font-weight: 600;
@@ -37,15 +39,14 @@ body{
 
 
 .navbar button{
-    display: inline-block;
-    font-size: 1.7rem;
+    
+    font-size: 2rem;
+    margin-right: 10rem;
     color: #fff;
     background: transparent;
-    text-decoration: none;
-    width: 5rem;
+    
     border: transparent;
-   border-radius: 2rem;
-    font-weight: 500;
+   
     transition: .3s;
     opacity: 0;
    animation: slideTop .5s ease forwards;  
@@ -195,6 +196,10 @@ body{
     text-align: center;
     font-size: 3.5rem;
     padding-bottom: rem;
+
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .7s;
  }
 
  .sub-title span{
@@ -366,10 +371,10 @@ body{
         margin-left: 10rem;
         margin-top: 10rem;
         
-        opacity: 0;
+        /* opacity: 0;
         animation: slideRight 1s ease forwards;
         animation-delay: .7s;
-        padding-bottom: 20%;
+        padding-bottom: 20%; */
      }
  }
 
@@ -379,5 +384,25 @@ body{
     html{
         font-size: 40%;
     }
+
+    .logo{
+        font-size: 3.5rem;
+
+    }
+
+    .navbar button{
+        font-size: 3.5rem;
+    }
+    
+    .about-img img{
+    
+        max-width: 63rem;
+        height: 50%;
+        width: 50%;
+        margin-left: 10rem;
+        margin-top: 10rem;
+        
+        
+     }
  }
  
