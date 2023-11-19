@@ -354,7 +354,23 @@ body{
  {
     html{
         font-size: 50%;
+        
+       
     }
+
+    .about-img img{
+    
+        max-width: 63rem;
+        height: 40%;
+        width: 40%;
+        margin-left: 10rem;
+        margin-top: 10rem;
+        
+        opacity: 0;
+        animation: slideRight 1s ease forwards;
+        animation-delay: .7s;
+        padding-bottom: 20%;
+     }
  }
 
  
