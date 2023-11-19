@@ -16,7 +16,7 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-   padding: 1rem ;
+    padding: 1rem ;
    
     background: #081b29;
     display: flex;
@@ -33,6 +33,7 @@ body{
     text-decoration: none;
     font-weight: 600;
     cursor: default;
+
     opacity: 0;
     animation: slideRight 1s ease forwards;
 }
@@ -44,7 +45,6 @@ body{
     margin-right: 10rem;
     color: #fff;
     background: transparent;
-    
     border: transparent;
    
     transition: .3s;
@@ -67,13 +67,10 @@ body{
     background-position: center;
     display:flex;
     align-items: center;
-    /* padding: 70px  0; */
-
 }
 
 .home-content{
     max-width: 60rem; 
-    /* display: flex; */
     align-items: center;
     justify-content: center;
 }
@@ -111,7 +108,6 @@ body{
     text-decoration: none;
     background: transparent;
     color: #fff;
-    /* border:2px solid #0ef; */
     border-radius: 50%;
     font-size: 1.5rem;
     margin-left: 1rem;
@@ -125,8 +121,7 @@ body{
 
 .home-2 a:hover{
     color: aqua;
-    /* box-shadow: 0 0 20px #0ef; */
- }
+}
 
 
  .about{
@@ -189,6 +184,7 @@ body{
     font-size: 1.4rem;
     line-height: 1.4;
     height: 40rem;
+    margin-top: 5rem;
     margin-bottom: 4rem;
  }
 
@@ -206,9 +202,10 @@ body{
     color: #0ef;
  }
 
+
  .work-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(2rem,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(20rem,2fr));
     grid-gap: 4rem;
     margin-top: 5rem;
    
@@ -222,7 +219,7 @@ body{
    font-weight: 1.3rem;
    border-right: 1rem;
    border-radius: 2rem   ;
-   transition: background 0.5s transfrom 0.5s;
+   /* transition: background 0.5s transfrom 0.5s; */
    box-shadow: 0 0 1rem #0ef;
 
  }
@@ -304,6 +301,39 @@ body{
 }
 
 
+.navbar2{
+    visibility: visible;
+    opacity: 1;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transition: all 0.4s ease 0s, opacity 2.5s cubic-bezier(0.5, 0, 0, 1) 0.1s, transform 2.5s cubic-bezier(0.5, 0, 0, 1) 0.1s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  @keyframes slideRight {
     0%{
         transform: translateX(-10rem);
@@ -371,10 +401,7 @@ body{
         margin-left: 10rem;
         margin-top: 10rem;
         
-        /* opacity: 0;
-        animation: slideRight 1s ease forwards;
-        animation-delay: .7s;
-        padding-bottom: 20%; */
+        
      }
  }
 
@@ -395,14 +422,14 @@ body{
     }
     
     .about-img img{
-    
         max-width: 63rem;
         height: 50%;
         width: 50%;
         margin-left: 10rem;
         margin-top: 10rem;
-        
-        
-     }
+    }
+    work-list{
+        grid-template-columns: repeat(auto-fit,minmax(20rem,2fr));
+        }
  }
  
