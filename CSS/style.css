@@ -36,12 +36,15 @@ body{
 }
 
 
-.navbar a{
+.navbar button{
     display: inline-block;
     font-size: 1.7rem;
     color: #fff;
+    background: transparent;
     text-decoration: none;
-    margin-left: 3.5rem;
+    width: 5rem;
+    border: transparent;
+   border-radius: 2rem;
     font-weight: 500;
     transition: .3s;
     opacity: 0;
@@ -49,8 +52,8 @@ body{
 
 }
 
-.navbar a:hover{
-   color: aqua;
+.navbar button:hover{
+   color: yellow;
 }
 
 .home{
@@ -111,6 +114,7 @@ body{
     border-radius: 50%;
     font-size: 1.5rem;
     margin-left: 1rem;
+    
     transition:  .5s ease;
     opacity: 0;
     animation: slideLeft 1s ease forwards;
@@ -136,8 +140,8 @@ body{
  .about-img img{
     
     max-width: 63rem;
-    height: 25%;
-    width: 25%;
+    height: 40%;
+    width: 40%;
     margin-left: 15rem;
     margin-top: 10rem;
     
@@ -149,7 +153,7 @@ body{
 
  .about-text{
     font-size: 3rem;
-    margin-right:13rem ;
+    margin-right:5rem ;
     opacity: 0;
     animation: slideLeft 1s ease forwards;
     animation-delay: .7s;
