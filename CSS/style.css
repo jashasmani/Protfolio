@@ -26,7 +26,7 @@ body{
 
 .logo{
     position: relative;
-    font-size: 1.4rem;
+    font-size: 2rem;
     color:#0ef;
     text-decoration: none;
     font-weight: 600;
@@ -38,7 +38,7 @@ body{
 
 .navbar a{
     display: inline-block;
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     color: #fff;
     text-decoration: none;
     margin-left: 3.5rem;
