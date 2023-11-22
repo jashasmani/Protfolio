@@ -209,6 +209,10 @@ body{
     height: 45rem;
     margin-top: auto;
     margin-bottom: 18rem;
+
+    display: flex;
+      justify-content: center;
+      align-items: center;
     
  }
 
@@ -984,4 +988,4 @@ body{
      
  }
  
- @import '~mdb-ui-kit/css/mdb.min.css';
+ 
