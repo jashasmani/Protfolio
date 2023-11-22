@@ -6,3 +6,7 @@ var typed=new typed(".text",{
     loop:true
 });
 
+// Initialization for ES Users
+import { Input, initMDB } from "mdb-ui-kit";
+
+initMDB({ Input });
