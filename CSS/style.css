@@ -224,6 +224,7 @@ body{
     align-items: center;;
     font-size: 3.5rem;
     padding-top:2rem;
+    padding-bottom:5rem;
 
     
 
@@ -244,9 +245,9 @@ body{
     
     text-align: center;
     grid-gap: 4rem;
-     margin-top: 5rem;
+     /* margin-top: 5rem;
     margin-left: 20rem; 
-    margin-right: 18rem; 
+    margin-right: 18rem;  */
    
     
 
