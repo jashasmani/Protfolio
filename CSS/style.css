@@ -906,6 +906,9 @@ body{
     html{
         font-size: 55%;
     }
+    nav.navbar1{
+        display: none;
+    }
 
     
     
