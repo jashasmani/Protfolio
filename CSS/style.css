@@ -824,7 +824,7 @@ body{
     padding-top: 0.5rem;
 
     justify-content:space-around;
-    gap: 10rem;
+    
     
  }
 
@@ -832,8 +832,8 @@ body{
     
     color: #fff;
     
-    /* margin-right: .5rem; 
-    margin-left: .5rem; */
+     margin-right: .5rem; 
+    margin-left: .5rem; 
     text-align: center;
     
  }
@@ -988,4 +988,7 @@ body{
         margin-right: 10rem;
     }
 
+    nav.navbar1{
+        display: none;
+    }
  }

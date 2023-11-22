@@ -6,7 +6,19 @@ var typed=new typed(".text",{
     loop:true
 });
 
-// Initialization for ES Users
-import { Input, initMDB } from "mdb-ui-kit";
+const refreshMessage = document.getElementById('work');
 
-initMDB({ Input });
+  // Event listener for scroll events
+  window.addEventListener('scroll', function () {
+    // Show the refresh message when scrolling
+    refreshMessage.style.display = 'block';
+
+    // Check if the user has scrolled to the top or bottom of the page
+    if (window.scrollY === 0 || window.scrollY + window.innerHeight === document.body.scrollHeight) {
+      // If at the top or bottom, refresh the page after a delay
+      setTimeout(function () {
+        location.reload();
+      }, 1000); // Adjust the delay based on your preferences
+    }
+  });
+
