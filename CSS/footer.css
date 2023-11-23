@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer {
+    margin-top: 10rem;
+    background-color:#003153 ;
+  
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer-content {
+    max-width: 120rem;
+    width: auto;
+    
+  }
+
+  .footer-content h3{
+    text-align: center;
+   margin-top: 5rem;
+   font-size: 2rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 2rem;
+    color: #fff;
+    
+
+
+
+  }
+  
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-bottom: 3rem;
+
+    text-align: center;
+}
+
+nav ul li {
+    margin-right: 2rem;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #ffffff99;
+    letter-spacing: 0.1rem;
+   
+  }
+  
+.look ul {
+    list-style: none;
+    display: flex;
+    margin-bottom: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.look ul li {
+    margin-right: 2rem;
+    
+
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+}
+.look ul li i{
+    margin-right: 2rem;
+    
+      background-color: transparent;
+      border-radius: 50%;
+      border: 1px solid aqua;
+      padding: 10px;
+    
+
+}
+
+.look ul li:last-child {
+    margin-right: 0;
+}
+
+.look ul li a {
+    text-decoration: none;
+    font-size: 2rem;
+    margin: auto;
+    color: aqua;
+    letter-spacing: 0.1rem;
+}
+
+.footer-content p{
+  text-align: center;
+  letter-spacing: 0.1rem;
+  margin-bottom: 8rem;
+  margin-top: 5rem;
+  color: #fff;
+  
+
+
+
+}
+
+
+  
+  /* Optional: Style the links on hover */
+  .look ul li i:hover {
+    /* border-radius: 10%; */
+    /* border-color: #fff 2rem; */
+  }
+  

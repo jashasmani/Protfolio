@@ -11,6 +11,11 @@ body{
     overflow-x: hidden;
 }
  
+.light{
+    color: black;
+    background:#f4f4f4;
+    overflow-x: hidden;
+}
 
 .header{
     position: fixed;
@@ -18,6 +23,7 @@ body{
     left: 0;
     width: 100%;
     padding: 1rem ;
+    
    
     background: #0b111e;
     display: flex;
@@ -211,8 +217,8 @@ body{
     margin-bottom: 18rem;
 
     display: flex;
-      justify-content: center;
-      align-items: center;
+    justify-content: center;
+    align-items: center;
     
  }
 
@@ -584,6 +590,7 @@ body{
      /* transform: translate(-50%,-50%) rotate(-90deg); */
     width: 12rem;
     height: 20rem;
+    
 }
 
 .radial-bars .radial-bar .progress-bar{
@@ -594,6 +601,7 @@ body{
     stroke-dashoffset: 502;
     stroke-linecap: round;
     animation: animate-bar 1s linear forwards;
+    
 
 }
 
@@ -606,10 +614,11 @@ body{
 .path{
     stroke-width: 10;
     stroke: #0ef;
-    fill: transparent;
+    fill: #0b111e;
     stroke-dasharray: 502;
     stroke-dashoffset: 502;
     stroke-linecap: round;
+    
 }
 
 
@@ -804,10 +813,10 @@ body{
 
 
 
-  nav.navbar1{
+  div.navbar1{
     position: sticky;
     bottom: 1rem;
-
+    
     backdrop-filter: blur(25px) saturate(200%);
     -webkit-backdrop-filter: blur(25px) saturate(200%);
     background-color: rgba(122, 131, 149, 0.35);
@@ -823,7 +832,7 @@ body{
     padding-top: 0.5rem;
 
     justify-content:space-around;
-    
+    margin-top: -3rem;
     
  }
 
@@ -997,3 +1006,17 @@ body{
         display: none;
     }
  }
+
+
+
+
+
+
+
+
+
+
+ .dark-mode {
+    background-color: black;
+    color: white;
+  }
