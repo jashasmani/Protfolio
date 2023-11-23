@@ -914,7 +914,7 @@ body{
     html{
         font-size: 55%;
     }
-    nav.navbar1{
+    div.navbar1{
         display: none;
     }
 
@@ -940,7 +940,7 @@ body{
         
         
      }
-     nav.navbar1{
+     div.navbar1{
         display: none;
     }
 
@@ -1002,7 +1002,7 @@ body{
         margin-right: 10rem;
     }
 
-    nav.navbar1{
+    div.navbar1{
         display: none;
     }
  }
