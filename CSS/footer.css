@@ -69,7 +69,8 @@ nav ul li a {
 }
 
 .look ul li {
-    margin-right: 2rem;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
     
 
     justify-content: center;
@@ -111,11 +112,10 @@ nav ul li a {
 
 }
 
-
-  
-  /* Optional: Style the links on hover */
   .look ul li i:hover {
-    /* border-radius: 10%; */
-    /* border-color: #fff 2rem; */
+    box-shadow: 0 0 2rem aqua;
+  }
+  nav ul li a:hover {
+    color: #fff;
   }
   

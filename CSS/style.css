@@ -388,6 +388,10 @@ body{
     text-underline-offset: 0.1rem;
     text-decoration-thickness: 0.1rem;
     margin-bottom: 5rem;
+
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: .7s;
 }
 
  
@@ -564,6 +568,10 @@ body{
     text-decoration-thickness: 0.1rem;
     margin-bottom: 5rem;
     margin-top: 10rem;
+
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: .7s;
 }
 
 .radial-bars{
@@ -725,9 +733,7 @@ body{
     text-align: center;
     grid-gap: 1rem;
     margin-top: 5rem;
-    /* margin-left: 20rem; 
-    margin-right: 20rem;  */
-   
+    
     
 
  }
@@ -744,11 +750,25 @@ body{
  }
 
  
-  div.c1{
+  div.co1{
 
     
     opacity: 0;
-    animation: slideLeft 1s ease forwards;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .7s;
+  }
+  div.co2{
+
+    
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: .7s;
+  }
+  div.co3{
+
+    
+    opacity: 0;
+    animation: slideButtom 1s ease forwards;
     animation-delay: .7s;
   }
 
