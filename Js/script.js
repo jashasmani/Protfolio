@@ -1,26 +1,4 @@
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-          entry.target.classList.add('showText');
-    }
-      else{
-        entry.target.classList.remove('showText');
-      }
-
-    });
-  });
-
-const he=document.querySelectorAll('.s');
-he.forEach((el) => observer.observe(el));
-
-
-
-
-
-
-
-
 
 
 

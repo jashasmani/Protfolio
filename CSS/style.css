@@ -3,6 +3,7 @@
     margin:0;
     box-sizing: border-box;
     font-family: 'poppins',sans-serif;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -80,6 +81,10 @@ body{
     max-width: 60rem; 
     align-items: center;
     justify-content: center;
+    
+    opacity: 0;
+    animation: slideButtom 1s ease forwards;
+    animation-delay: .7s;
 }
 
 .home-content h4{
@@ -91,6 +96,8 @@ body{
     animation: slideButtom 1s ease forwards;
     animation-delay: .7s;
 }
+
+
 
 .home-content h3{
     font-size: 5rem;
