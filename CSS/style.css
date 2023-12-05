@@ -47,13 +47,17 @@ body{
 }
 
 
-.navbar a{
+.navbar button{
     
     font-size: 1.5rem;
     margin-right: 10rem;
-    color: #fff;
+    color: white;
     background: transparent;
     text-decoration: none;
+    padding: .5rem;
+    background-color: #003153;
+    border: #0ef;
+    border-radius: 1rem;    
 
    
     transition: .3s;
@@ -1037,10 +1041,7 @@ body{
         display: none;
     }
 
-    /* .contact-list div{
-        font-size: 2.5rem;
-    } */
- }
+   }
 
 
  @media(max-width:500px)
@@ -1063,8 +1064,6 @@ body{
         /* margin-left: 10rem; */
     }
 
-    /* .contact-list div{
-        font-size: 2.5rem;
-    } */
+    
 
  }
