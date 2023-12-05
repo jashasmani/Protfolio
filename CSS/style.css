@@ -995,11 +995,11 @@ body{
     
     .image{
 
-        /* margin-top: -5rem; */
+        margin-top: -5rem;
     }
     .image img{
         max-width: 63rem;
-        height: 40%;
+        height: 50%;
         width: 55%;
         /* margin-left: 10rem; */
     }
