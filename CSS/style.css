@@ -1041,6 +1041,32 @@ body{
         display: none;
     }
 
+    .contact-list div i{
+
+        font-size: 2.5rem;
+       
+      }
+    
+      .contact-list div h6{
+    
+        font-size: 2rem;
+    
+      }
+    
+      .contact-list div p{
+    
+        font-size: 2rem;
+      
+      }
+    
+      .contact-list div a{
+        
+       
+        font-size: 2rem;
+      }
+    
+        
+
    }
 
 
@@ -1063,6 +1089,32 @@ body{
         margin-top: -5rem;
         /* margin-left: 10rem; */
     }
+
+
+    
+  .contact-list div i{
+
+    font-size: 2.5rem;
+   
+  }
+
+  .contact-list div h6{
+
+    font-size: 2rem;
+
+  }
+
+  .contact-list div p{
+
+    font-size: 2rem;
+  
+  }
+
+  .contact-list div a{
+    
+   
+    font-size: 2rem;
+  }
 
     
 
