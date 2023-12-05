@@ -995,7 +995,7 @@ body{
     
     .image{
 
-        margin-top: -5rem;
+        /* margin-top: -5rem; */
     }
     .image img{
         max-width: 63rem;
