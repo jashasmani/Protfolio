@@ -47,13 +47,14 @@ body{
 }
 
 
-.navbar button{
+.navbar a{
     
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-right: 10rem;
     color: #fff;
     background: transparent;
-    border: transparent;
+    text-decoration: none;
+
    
     transition: .3s;
     opacity: 0;
@@ -168,9 +169,10 @@ body{
    
 }
 .image img{
-    width: 40%;
+    width: 45%;
     height: 60%;
     border-radius: 10%;
+    margin-top: 5rem;
     
 }
 
@@ -688,8 +690,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 15rem;
-    left: 10rem;
+    top: 17rem;
+    /* left: 2.5rem; */
     
     font-size: 1.2rem;
     font-weight: 500;
