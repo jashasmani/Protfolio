@@ -1036,6 +1036,10 @@ body{
     .navbar1{
         display: none;
     }
+
+    .contact-list div{
+        font-size: 2.5rem;
+    }
  }
 
 
@@ -1045,5 +1049,22 @@ body{
         display: none;
     }
 
+    .image{
+
+        display: flex;
+      align-items: center;
+      justify-content: center;
+      
+    }
+    .image img{
+        max-width: 50%;
+        max-height: 40%; 
+        margin-top: -5rem;
+        /* margin-left: 10rem; */
+    }
+
+    .contact-list div{
+        font-size: 2.5rem;
+    }
 
  }
