@@ -999,8 +999,8 @@ body{
     }
     .image img{
         max-width: 63rem;
-        height: 55%;
-        width: 40%;
+        height: 40%;
+        width: 45%;
         /* margin-left: 10rem; */
     }
     .data{
