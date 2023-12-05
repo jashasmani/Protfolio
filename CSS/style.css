@@ -1037,9 +1037,9 @@ body{
         display: none;
     }
 
-    .contact-list div{
+    /* .contact-list div{
         font-size: 2.5rem;
-    }
+    } */
  }
 
 
@@ -1063,8 +1063,8 @@ body{
         /* margin-left: 10rem; */
     }
 
-    .contact-list div{
+    /* .contact-list div{
         font-size: 2.5rem;
-    }
+    } */
 
  }
