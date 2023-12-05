@@ -999,7 +999,7 @@ body{
     }
     .image img{
         max-width: 63rem;
-        height: 40%;
+        height: 45%;
         width: 40%;
         /* margin-left: 10rem; */
     }
@@ -1043,14 +1043,3 @@ body{
         display: none;
     }
  }
-
-
-
-
-
-
-
- .dark-mode {
-    background-color: black;
-    color: white;
-  }
