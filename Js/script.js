@@ -1,54 +1,19 @@
+const sections = document.querySelectorAll('section[id]')
 
+const scrollActive = ()=>{
+     const scrollDown = window.scrollY
 
+     sections.forEach(current=>{
+          const sectionHeight = current.offsetHeight,
+                sectionTop = current.offsetTop - 58,
+                sectionId = current.getAttribute('id'),
+                sectionsClass = document.querySelector('.nav__menu a[href*=' +sectionId + ']')
 
-
-
-// const darkMode = () => {
-
-//   let light = document.getElementById("home");
-//   let navbar = document.getElementById("head");
-//   let path = document.getElementById("path");
-
-//   document.body.style.background = "#0b111e";
-//   document.body.style.color = "white";
-//   light.style.background = "#0b111e";
-//   navbar.style.background = "#0b111e";
-//   path.style.background = "#0b111e";
-// }
-
-
-// const lightMode = () => {
-
-//   let light = document.getElementById("home");
-//   let navbar = document.getElementById("head");
-//   let path = document.getElementById("path");
-  
-//   document.body.style.background = "#f4f4f4";
-//   document.body.style.color = "black";
-//   light.style.background = "#f4f4f4";
-//   navbar.style.background = "#f4f4f4";
-//   path.style.fill="#f4f4f4";
-// }
-
-// const onFunction = () => {
-
-
-//   let b = document.getElementById("darklight");
-//   let bn = b.innerHTML;
-//   console.log(bn);
-
-//   if (bn == "dark" ) {
-//       darkMode();
-//       b.innerHTML = "light";
-//     }
-//   else {
-//       lightMode();
-//       b.innerHTML = "dark";
-//   }
-// }
-
-
-// function onFunction() {
-//   var element = document.body;
-//   element.classList.toggle("light");
-// }
+          if(scrollDown > sectionTop && scrollDown <= sectionTop + sectionHeight){
+               sectionsClass.classList.add('active-link')
+          }else{
+               sectionsClass.classList.remove('active-link')
+          }
+     })
+}
+window.addEventListener('scroll',scrollActive)

@@ -55,10 +55,22 @@ body{
     background: transparent;
     text-decoration: none;
     padding: .5rem;
-    background-color: #003153;
-    border: #0ef;
+    background-color: transparent;
+    border: #0ef solid;
     border-radius: 1rem;    
 
+   
+    transition: .3s;
+    opacity: 0;
+   animation: slideTop .5s ease forwards;  
+
+}
+
+.navbar button a{
+    
+   
+    color: white;
+    text-decoration: none;
    
     transition: .3s;
     opacity: 0;
