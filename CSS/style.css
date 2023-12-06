@@ -304,7 +304,7 @@ body{
     width: 13rem;
     height: 8rem;
     margin-top: 1rem;
-    border-radius: 2rem;
+    border-radius: 1rem;
    
   }
 
@@ -341,7 +341,7 @@ body{
     color: #0ef;
     font-size: 1rem;
     text-align: left;
-    padding-left: 01rem;
+    margin-left: -1rem;
     display: inline-block;
     letter-spacing:0.1rem;
   }
@@ -894,9 +894,10 @@ body{
     color: #0ef;
  }
 
-
-
-
+ .navbar1 a.active {
+    color: #ff4500; /* Set your desired color for the active link */
+    font-weight: bold; /* You can adjust the font-weight for emphasis */
+}
 
 
 
@@ -1131,3 +1132,4 @@ body{
     
 
  }
+
