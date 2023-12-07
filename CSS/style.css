@@ -894,10 +894,14 @@ body{
     color: #0ef;
  }
 
- .navbar1 a.active {
-    color: #ff4500; /* Set your desired color for the active link */
-    font-weight: bold; /* You can adjust the font-weight for emphasis */
-}
+
+
+.navbar1 a.active {
+    color: #0ef; 
+    font-weight: bold; 
+    /* box-shadow: 0 0 1rem white; */
+  }
+  
 
 
 
@@ -1133,3 +1137,16 @@ body{
 
  }
 
+/* Add this to your existing CSS */
+
+.load-animation {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  
+  .load-animation.animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
