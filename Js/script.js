@@ -46,25 +46,25 @@ document.addEventListener("DOMContentLoaded", function() {
 //  
 
 
-document.addEventListener("DOMContentLoaded", function() {
-    // Get all elements with the class 'load-animation'
-    const elements = document.querySelectorAll('.load-animation');
+// document.addEventListener("DOMContentLoaded", function() {
+//     // Get all elements with the class 'load-animation'
+//     const elements = document.querySelectorAll('.load-animation');
   
-    // Function to add the 'animate' class when an element comes into view
-    function animateElements() {
-      elements.forEach(element => {
-        const elementTop = element.getBoundingClientRect().top;
-        const windowHeight = window.innerHeight;
+//     // Function to add the 'animate' class when an element comes into view
+//     function animateElements() {
+//       elements.forEach(element => {
+//         const elementTop = element.getBoundingClientRect().top;
+//         const windowHeight = window.innerHeight;
   
-        if (elementTop < windowHeight) {
-          element.classList.add('animate');
-        }
-      });
-    }
+//         if (elementTop < windowHeight) {
+//           element.classList.add('animate');
+//         }
+//       });
+//     }
   
-    // Attach the scroll event listener
-    window.addEventListener('scroll', animateElements);
+//     // Attach the scroll event listener
+//     window.addEventListener('scroll', animateElements);
   
-    // Initial animation check
-    animateElements();
-  });
+//     // Initial animation check
+//     animateElements();
+//   });

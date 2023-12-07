@@ -1022,7 +1022,7 @@ body{
       
     }
     .image img{
-        max-width: 50%;
+        max-width: auto;
         max-height: 40%; 
         margin-top: -5rem;
         /* margin-left: 10rem; */
@@ -1101,7 +1101,7 @@ body{
       
     }
     .image img{
-        max-width: 50%;
+        /* max-width: 50%; */
         max-height: 40%; 
         margin-top: -5rem;
         /* margin-left: 10rem; */
@@ -1139,7 +1139,7 @@ body{
 
 /* Add this to your existing CSS */
 
-.load-animation {
+/* .load-animation {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
@@ -1149,4 +1149,4 @@ body{
     opacity: 1;
     transform: translateY(0);
   }
-  
+   */
