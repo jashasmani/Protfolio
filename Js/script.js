@@ -1,10 +1,9 @@
 
 
 document.addEventListener("DOMContentLoaded", function() {
-  // Get all the section elements
+
   const sections = document.querySelectorAll("section");
 
-  // Get all the navigation links
   const navLinks = document.querySelectorAll(".navbar1 a");
 
   // Function to update the active link based on the scroll position

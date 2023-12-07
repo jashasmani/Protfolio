@@ -12,11 +12,7 @@ body{
     overflow-x: hidden;
 }
  
-.light{
-    color: black;
-    background:#f4f4f4;
-    overflow-x: hidden;
-}
+
 
 .header{
     position: fixed;
@@ -78,9 +74,6 @@ body{
 
 }
 
-.navbar button:hover{
-   color: yellow;
-}
 
 .home{
     position: relative;
@@ -240,7 +233,7 @@ body{
     height: 45rem;
     margin-top: auto;
     margin-bottom: 18rem;
-
+   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -254,9 +247,9 @@ body{
     justify-content: center;
     align-items: center;;
     font-size: 3.5rem;
-    padding-top:2rem;
+    padding-top:5rem;
     padding-bottom:5rem;
-
+    
     
 
     opacity: 0;
@@ -735,7 +728,8 @@ body{
     font-size: 1.4rem;
     line-height: 1.4;
     height: 45rem;
-    
+    padding-top: 10rem;
+    margin-top: 10rem;
     margin-bottom: 18rem;
     width: auto;
 
@@ -891,15 +885,27 @@ body{
     
  }
   .navbar1 a:hover{
-    color: #0ef;
+    color: #0b111e; 
+    font-weight: bold; 
+
+    background-color: lightblue;
+
+    border-radius: 50%;
+    padding: .1rem;
+    box-shadow: 0 0 2rem white;
  }
 
 
 
 .navbar1 a.active {
-    color: #0ef; 
+    color: #0b111e; 
     font-weight: bold; 
-    /* box-shadow: 0 0 1rem white; */
+
+    background-color: lightblue;
+
+    border-radius: 50%;
+    padding: .1rem;
+    box-shadow: 0 0 2rem white;
   }
   
 
