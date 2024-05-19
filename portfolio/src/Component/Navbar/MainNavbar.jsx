@@ -22,10 +22,13 @@ function CustomNavbar({ isDarkMode, handleToggle }) {
 
   return (
     <Navbar
-      bg={isDarkMode ? "dark" : "light"}
       expand="lg"
       className="pe-4 d-flex justify-content-between"
-      style={{ boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)" }}
+      style={{
+        boxShadow: isDarkMode
+          ? "0 4px 6px rgba(255, 255, 255, 0.1)"
+          : "0 4px 6px rgba(0, 0, 0, 0.1)",
+      }}
     >
       <Navbar.Brand
         href="#home"
@@ -83,7 +86,7 @@ function CustomNavbar({ isDarkMode, handleToggle }) {
             "--bs-btn-font-size": ".75rem",
           }}
         >
-          Hire Me
+          Resume
         </button>
         <input
           type="checkbox"

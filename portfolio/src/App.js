@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import MainNavbar from "./Component/Navbar/MainNavbar";
 import Main from "./Component/Main/Main";
+import About from "./Component/About/About";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(true);
@@ -19,14 +19,14 @@ function App() {
   }, [isDarkMode]);
 
   return (
-    <div>
-      <MainNavbar isDarkMode={isDarkMode} handleToggle={handleToggle} />
+    <>
       <div
-        style={{ background: isDarkMode ? "dark" : "light", height: "100vh" }}
+        style={{ background: isDarkMode ? "dark" : "light", height: "80vh" }}
       >
-        <Main isDarkMode={isDarkMode} />
+        <Main isDarkMode={isDarkMode} handleToggle={handleToggle} />
+        <About />
       </div>
-    </div>
+    </>
   );
 }
 
