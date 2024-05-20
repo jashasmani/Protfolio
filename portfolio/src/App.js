@@ -4,6 +4,7 @@ import Main from "./Component/Main/Main";
 import About from "./Component/About/About";
 import MainNavbar from "./Component/Navbar/MainNavbar";
 import Skill from "./Component/Skill/Skill";
+import Projects from "./Component/Projects/Projects";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(true);
@@ -28,6 +29,7 @@ function App() {
         <MainNavbar isDarkMode={isDarkMode} handleToggle={handleToggle} />
         <Main isDarkMode={isDarkMode} handleToggle={handleToggle} />
         <About />
+        <Projects />
         <Skill />
       </div>
     </>

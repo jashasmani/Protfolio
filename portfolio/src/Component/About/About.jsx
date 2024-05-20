@@ -8,7 +8,7 @@ const About = () => {
         <div className="col-md-10 mx-auto">
           <div className="d-flex flex-column justify-content-center">
             <h1
-              className="text-center mb-4"
+              className="text-center mb-4 mt-5"
               style={{ fontFamily: "Plus Jakarta Sans" }}
             >
               About Me
