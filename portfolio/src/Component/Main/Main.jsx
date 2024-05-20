@@ -29,20 +29,13 @@ const Main = ({ isDarkMode, handleToggle }) => {
 
   return (
     <>
-      <MainNavbar isDarkMode={isDarkMode} handleToggle={handleToggle} />
       <section className="container">
-        <div className="background-container">
-          <Background />
-        </div>
-        <div
-          style={{ margin: "8rem 0" }}
-          className="d-flex flex-column flex-md-row justify-content-center align-items-center overlay-content"
-        >
+        <Background />
+        <div className="d-flex flex-column flex-md-row justify-content-center align-items-center overlay-content backimage">
           <div
             className="text-center"
             style={{
               color: isDarkMode ? "#ffffff" : "#000000",
-              paddingRight: "1rem",
             }}
           >
             <div className="container">
@@ -69,7 +62,7 @@ const Main = ({ isDarkMode, handleToggle }) => {
               <h2 className="subtitle">
                 Full Stack Developer & Enterprise Solutions Expert
               </h2>
-              <div className="d-flex justify-content-around">
+              <div className="d-flex justify-content-evenly">
                 <button
                   type="button"
                   className={
@@ -79,6 +72,16 @@ const Main = ({ isDarkMode, handleToggle }) => {
                   }
                 >
                   Hire Me
+                </button>
+                <button
+                  type="button"
+                  className={
+                    isDarkMode
+                      ? "btn btn-outline-light btn-sm"
+                      : "btn btn-outline-dark btn-sm"
+                  }
+                >
+                  Contect Me
                 </button>
               </div>
             </div>

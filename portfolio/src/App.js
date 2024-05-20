@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import Main from "./Component/Main/Main";
 import About from "./Component/About/About";
+import MainNavbar from "./Component/Navbar/MainNavbar";
+import Skill from "./Component/Skill/Skill";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(true);
@@ -21,10 +23,12 @@ function App() {
   return (
     <>
       <div
-        style={{ background: isDarkMode ? "dark" : "light", height: "80vh" }}
+        style={{ background: isDarkMode ? "dark" : "light", height: "100vh" }}
       >
+        <MainNavbar isDarkMode={isDarkMode} handleToggle={handleToggle} />
         <Main isDarkMode={isDarkMode} handleToggle={handleToggle} />
         <About />
+        <Skill />
       </div>
     </>
   );
