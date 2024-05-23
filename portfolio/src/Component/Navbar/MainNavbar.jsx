@@ -1,25 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./MainNavbar.css";
 import WbSunnyIcon from "@mui/icons-material/WbSunny";
 import Brightness2Icon from "@mui/icons-material/Brightness2";
 
 function CustomNavbar({ isDarkMode, handleToggle }) {
-  //   const [isDarkMode, setIsDarkMode] = useState(false);
-
-  //   const handleToggle = () => {
-  //     setIsDarkMode((prevMode) => !prevMode);
-  //   };
-
-  //   useEffect(() => {
-  //     if (isDarkMode) {
-  //       document.body.classList.add("dark-mode");
-  //     } else {
-  //       document.body.classList.remove("dark-mode");
-  //     }
-  //   }, [isDarkMode]);
-
   return (
     <Navbar
       expand="lg"
@@ -31,40 +18,44 @@ function CustomNavbar({ isDarkMode, handleToggle }) {
       }}
     >
       <Navbar.Brand
-        href="#home"
+        as={Link}
+        to="/home"
         className={isDarkMode ? "ms-5 text-light" : "ms-5"}
       >
         Jash Asmani
       </Navbar.Brand>
       <div className="d-flex align-items-center">
-        {/* <Navbar.Toggle aria-controls="basic-navbar-nav" /> */}
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto d-flex justify-content-between w-100">
             <Nav.Link
+              as={Link}
+              to="/"
               id={isDarkMode ? "hd" : "h"}
-              href="#home"
-              className={isDarkMode ? "text-light " : ""}
+              className={isDarkMode ? "text-light" : ""}
             >
               HOME
             </Nav.Link>
             <Nav.Link
-              href="#about"
+              as={Link}
+              to="/about"
               id={isDarkMode ? "hd" : "h"}
               className={isDarkMode ? "text-light" : ""}
             >
               ABOUT US
             </Nav.Link>
             <Nav.Link
-              href="#blog"
+              as={Link}
+              to="/blog"
               id={isDarkMode ? "hd" : "h"}
               className={isDarkMode ? "text-light" : ""}
             >
               BLOG
             </Nav.Link>
             <Nav.Link
-              href="#contact"
-              className={isDarkMode ? "text-light" : ""}
+              as={Link}
+              to="/contact"
               id={isDarkMode ? "hd" : "h"}
+              className={isDarkMode ? "text-light" : ""}
             >
               CONTACT US
             </Nav.Link>
@@ -73,7 +64,8 @@ function CustomNavbar({ isDarkMode, handleToggle }) {
       </div>
       <div className="d-flex align-items-center">
         <button
-          href="#hire-me"
+          as={Link}
+          to="/hire-me"
           type="button"
           className={
             isDarkMode

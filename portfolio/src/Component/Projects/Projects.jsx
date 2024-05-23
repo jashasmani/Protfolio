@@ -1,23 +1,20 @@
 import React from "react";
-import { Steps } from "antd";
 import "./project.css";
+import Steps from "./Steps";
 
-const description = "This is a description.";
-
-const Projects = () => {
+const Projects = ({ isDarkMode }) => {
   return (
-    <section className="text-center my-5">
-      <div>
-        <h1 className="mb-5 mt-5" style={{ fontFamily: "Plus Jakarta Sans" }}>
-          Projects
-        </h1>
-        <div className="d-flex justify-content-center align-items-start">
-          <div className="step-bar">
-            <Steps direction="vertical" size="large" progressDot>
-              <Steps.Step title="Finished" description={description} />
-              <Steps.Step title="In Progress" description={description} />
-              <Steps.Step title="Waiting" description={description} />
-            </Steps>
+    <section className="container-1">
+      <div className="row">
+        <div className="col-md-10 mx-auto">
+          <div className="d-flex flex-column justify-content-center">
+            <h1
+              className="mb-5 mt-5 text-center"
+              style={{ fontFamily: "Plus Jakarta Sans", fontWeight: "600" }}
+            >
+              Projects
+            </h1>
+            <Steps isDarkMode={isDarkMode} />
           </div>
         </div>
       </div>

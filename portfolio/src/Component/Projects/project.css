@@ -2,3 +2,85 @@
 .step-bar .ant-steps-item-description {
   color: white !important;
 }
+.step-bar-black .ant-steps-item-title,
+.step-bar-black .ant-steps-item-description {
+  color: black !important;
+}
+
+.arrange {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+.arrange-rev {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+.project-info {
+  /* width: 60%; */
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.project-img {
+  width: 25rem;
+  margin-left: 1rem;
+  height: 15rem;
+  border-radius: 1rem;
+}
+
+@media (max-width: 1000px) {
+  .arrange {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-content: center;
+  }
+  .arrange-rev {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .project-info {
+    width: none;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .project-img {
+    margin-top: 2rem;
+    width: 25rem;
+    height: 15rem;
+    /* margin-left: 1rem; */
+    /* border-radius: 1rem; */
+  }
+}
+
+@media (max-width: 400px) {
+  .project-img {
+    width: 15rem;
+    height: 10rem;
+    margin-left: 0rem;
+  }
+
+  .project-info {
+    font-size: 15px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 300px) {
+  .project-img {
+    width: 10rem;
+    height: 8rem;
+    margin-left: 0rem;
+  }
+}

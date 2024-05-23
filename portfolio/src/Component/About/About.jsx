@@ -15,11 +15,8 @@ const About = () => {
             </h1>
             <br />
             <p
-              style={{
-                paddingLeft: "3rem",
-                fontSize: "1.2rem",
-                fontFamily: "Quicksand",
-              }}
+              className="about-text"
+              
             >
               I'm a versatile software developer skilled in a wide array of
               technologies. I build robust back-end services with Spring Boot

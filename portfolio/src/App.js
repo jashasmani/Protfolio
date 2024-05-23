@@ -5,6 +5,10 @@ import About from "./Component/About/About";
 import MainNavbar from "./Component/Navbar/MainNavbar";
 import Skill from "./Component/Skill/Skill";
 import Projects from "./Component/Projects/Projects";
+import Social from "./Component/RightSide/Social";
+import Contect from "./Component/Contact/Contact";
+import First from "./Component/First/First";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(true);
@@ -20,18 +24,16 @@ function App() {
       document.body.classList.remove("dark-mode");
     }
   }, [isDarkMode]);
-
   return (
     <>
-      <div
-        style={{ background: isDarkMode ? "dark" : "light", height: "100vh" }}
-      >
+      <BrowserRouter>
         <MainNavbar isDarkMode={isDarkMode} handleToggle={handleToggle} />
-        <Main isDarkMode={isDarkMode} handleToggle={handleToggle} />
-        <About />
-        <Projects />
-        <Skill />
-      </div>
+        <Routes>
+          <Route path="/" element={<First />} />
+          <Route path="/home" element={<Main />} />
+          <Route path="/contact" element={<Contect />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

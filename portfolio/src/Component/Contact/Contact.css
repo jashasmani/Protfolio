@@ -1,0 +1,22 @@
+.container {
+    max-width: 600px;
+  }
+  
+  .form-label {
+    font-weight: bold;
+  }
+  
+  .form-control:focus {
+    box-shadow: none;
+  }
+  
+  .invalid-feedback {
+    display: block;
+  }
+  
+  .btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+  }
+  

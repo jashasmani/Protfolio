@@ -1,26 +1,127 @@
 /* Skill.css */
 .card-width {
-    width: 11rem;
-    height: 11rem;
-    color: aliceblue;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-    border-radius: 1.2rem;
-    background-color: #ffffff10;
-    backdrop-filter: blur(15px);
-    transition: transform 0.3s, box-shadow 0.3s;
+  width: 11rem;
+  height: 11rem;
+  color: aliceblue;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 1.2rem;
+  background-color: #ffffff10;
+  backdrop-filter: blur(15px);
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin: 3rem;
+  padding: 3rem;
+}
+
+.card-width:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); */
+}
+
+.imgSize {
+  width: 5rem;
+  height: 5rem;
+}
+
+.card {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 1090px) {
+  .card-width {
+    width: 9rem;
+    height: 9rem;
   }
   
-  .card-width:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
-    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); */
+  .card {
+    font-size: 1rem;
   }
-  
+}
+
+@media (max-width: 895px) {
   .imgSize {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .card-width {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  .card {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 720px) {
+  .imgSize {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .card-width {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .card {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 640px) {
+  .imgSize {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .card-width {
     width: 5rem;
     height: 5rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
   }
-  
+
+  .card {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 490px) {
+  .imgSize {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .card-width {
+    width: 3rem;
+    height: 3rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+  }
+
+  .card {
+    font-size: 5px;
+  }
+}
+@media (max-width: 330px) {
+  .imgSize {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .card-width {
+    width: 3rem;
+    height: 3rem;
+    padding: 0.2rem;
+    margin: 0.2rem;
+  }
+
+  .card {
+    font-size: 6px;
+  }
+}
