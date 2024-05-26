@@ -35,6 +35,12 @@
   border-radius: 1rem;
 }
 
+.btn-center{
+  display: flex;
+  justify-content: center;
+  margin: 5rem 0;
+}
+
 @media (max-width: 1000px) {
   .arrange {
     display: flex;

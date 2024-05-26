@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./MainNavbar.css";
 import WbSunnyIcon from "@mui/icons-material/WbSunny";
 import Brightness2Icon from "@mui/icons-material/Brightness2";
+import { Button } from "antd";
 
 function CustomNavbar({ isDarkMode, handleToggle }) {
   return (
@@ -45,6 +46,14 @@ function CustomNavbar({ isDarkMode, handleToggle }) {
             </Nav.Link>
             <Nav.Link
               as={Link}
+              to="/project"
+              id={isDarkMode ? "hd" : "h"}
+              className={isDarkMode ? "text-light" : ""}
+            >
+              PROJECTS
+            </Nav.Link>
+            <Nav.Link
+              as={Link}
               to="/blog"
               id={isDarkMode ? "hd" : "h"}
               className={isDarkMode ? "text-light" : ""}
@@ -55,7 +64,7 @@ function CustomNavbar({ isDarkMode, handleToggle }) {
               as={Link}
               to="/contact"
               id={isDarkMode ? "hd" : "h"}
-              className={isDarkMode ? "text-light" : ""}
+              className={isDarkMode ? " text-light" : ""}
             >
               CONTACT US
             </Nav.Link>
@@ -63,42 +72,29 @@ function CustomNavbar({ isDarkMode, handleToggle }) {
         </Navbar.Collapse>
       </div>
       <div className="d-flex align-items-center">
-        <button
-          as={Link}
-          to="/hire-me"
-          type="button"
-          className={
-            isDarkMode
-              ? "mx-3 btn btn-outline-light"
-              : "mx-3 btn btn-outline-dark"
-          }
+        <Button
           style={{
-            "--bs-btn-padding-y": ".30rem",
-            "--bs-btn-padding-x": ".5rem",
-            "--bs-btn-font-size": ".75rem",
+            backgroundColor: "transparent",
+            color: "inherit",
+            marginLeft: ".5rem",
           }}
+          className="rm-border"
         >
           Resume
-        </button>
-        <input
-          type="checkbox"
-          className="btn-check"
-          id="btn-check-2"
-          checked={isDarkMode}
+        </Button>
+
+        <Button
+          type="primary"
+          icon={isDarkMode ? <WbSunnyIcon /> : <Brightness2Icon />}
           onChange={handleToggle}
-        />
-        <label
-          className="btn btn"
-          htmlFor="btn-check-2"
+          className="rm-border"
           style={{
-            border: `1px solid ${isDarkMode ? "white" : "black"}`,
-            "--bs-btn-padding-y": ".10rem",
-            "--bs-btn-padding-x": ".25rem",
-            "--bs-btn-font-size": ".75rem",
+            backgroundColor: "transparent",
+            border: "0.5px white solid ",
+            color: "inherit",
+            marginLeft: ".5rem",
           }}
-        >
-          {isDarkMode ? <WbSunnyIcon /> : <Brightness2Icon />}
-        </label>
+        />
       </div>
     </Navbar>
   );

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Profile from "./DP_jash.jpg";
 import MainNavbar from "../Navbar/MainNavbar";
+import { Button } from "antd";
 import "./Background.css";
 import "./main.css";
 import Background from "./Background";
@@ -63,26 +64,36 @@ const Main = ({ isDarkMode, handleToggle }) => {
                 Full Stack Developer & Enterprise Solutions Expert
               </h2>
               <div className="d-flex justify-content-evenly">
-                <button
-                  type="button"
-                  className={
-                    isDarkMode
-                      ? "btn btn-outline-light btn-sm"
-                      : "btn btn-outline-dark btn-sm"
-                  }
+                <Button
+                  style={{
+                    backgroundColor: "transparent",
+                    border: "0.5px white solid",
+                    color: "inherit",
+                    marginLeft: ".5rem",
+                  }}
+
+                  className="rm-border"
                 >
                   Hire Me
-                </button>
-                <button
-                  type="button"
-                  className={
-                    isDarkMode
-                      ? "btn btn-outline-light btn-sm"
-                      : "btn btn-outline-dark btn-sm"
-                  }
+                </Button>
+                <Button
+                  style={{
+                    backgroundColor: "transparent",
+                    border: "0.5px white solid",
+                    color: "inherit",
+                    marginLeft: ".5rem",
+                  }}
+                  className="rm-border"
+
+                  // type="button"
+                  // className={
+                  //   isDarkMode
+                  //     ? "btn btn-outline-light btn-sm"
+                  //     : "btn btn-outline-dark btn-sm"
+                  // }
                 >
                   Contect Me
-                </button>
+                </Button>
               </div>
             </div>
           </div>

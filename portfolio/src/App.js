@@ -9,6 +9,7 @@ import Social from "./Component/RightSide/Social";
 import Contect from "./Component/Contact/Contact";
 import First from "./Component/First/First";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Moreproject from "./Component/MoreProject/Moreproject";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(true);
@@ -32,6 +33,15 @@ function App() {
           <Route path="/" element={<First />} />
           <Route path="/home" element={<Main />} />
           <Route path="/contact" element={<Contect />} />
+          <Route
+            path="/project"
+            element={
+              <Moreproject
+                isDarkMode={isDarkMode}
+                handleToggle={handleToggle}
+              />
+            }
+          />
         </Routes>
       </BrowserRouter>
     </>

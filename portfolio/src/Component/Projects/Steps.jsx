@@ -3,12 +3,11 @@ import { Steps, Button } from "antd";
 import im1 from "./image.png";
 import airline from "./file.png";
 import grocery from "./grocery.png";
+import { useNavigate } from "react-router";
 
 import Brightness1OutlinedIcon from "@mui/icons-material/Brightness1Outlined";
 
-const descriptionStyle = {
-  // textAlign: 'center',
-};
+
 
 const description = (
   <div className="arrange">
@@ -54,8 +53,9 @@ const description2 = (
   </div>
 );
 
-const App = ({ isDarkMode }) => {
+const StepsReact = ({ isDarkMode }) => {
   const [showMore, setShowMore] = useState(false);
+  const nav = useNavigate();
 
   const items = [
     {
@@ -91,8 +91,11 @@ const App = ({ isDarkMode }) => {
         current={1}
         items={displayedItems}
       />
+      <div className="btn-center">
+        <Button className="rm-border" onClick={()=>nav('/project')}>Show All</Button>
+      </div>
     </div>
   );
 };
 
-export default App;
+export default StepsReact;

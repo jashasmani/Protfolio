@@ -22,9 +22,21 @@ const Social = () => (
         position: "fixed",
       }}
     >
-      <FloatButton icon={<GithubFilled />} style={buttonStyle} />
-      <FloatButton icon={<LinkedinFilled />} style={buttonStyle} />
-      <FloatButton icon={<WhatsAppOutlined />} style={buttonStyle} />
+      <FloatButton
+        icon={<GithubFilled />}
+        className="rm-border"
+        style={buttonStyle}
+      />
+      <FloatButton
+        icon={<LinkedinFilled />}
+        className="rm-border"
+        style={buttonStyle}
+      />
+      <FloatButton
+        icon={<WhatsAppOutlined />}
+        className="rm-border"
+        style={buttonStyle}
+      />
     </FloatButton.Group>
   </>
 );

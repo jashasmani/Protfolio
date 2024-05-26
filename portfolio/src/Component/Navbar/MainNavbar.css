@@ -1,6 +1,5 @@
-
 body.dark-mode {
-  background-color: #03001C;
+  background-color: #03001c;
   color: #ffffff;
 }
 
@@ -12,15 +11,24 @@ body.dark-mode {
   color: rgba(0, 0, 0, 0.75);
 }
 
-#h:hover{
+#h:hover {
   color: black;
-  background-color: #E2DFD0;
+  background-color: #e2dfd0;
   border-radius: 0.5rem;
 }
-#hd:hover{
+#hd:hover {
   color: white;
-  background-color: #0C0C0C;
+  background-color: #0c0c0c;
   border-radius: 0.5rem;
 }
 
+.rm-border {
+  border: 0.5px white solid;
+}
 
+.rm-border:hover {
+  border: none;
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px,
+    rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.655) 0px 4px 6px,
+    rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.675) 0px -3px 5px;
+}

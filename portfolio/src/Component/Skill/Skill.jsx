@@ -24,76 +24,75 @@ const Skill = () => {
       >
         My Skills
       </h1>
-      <div className="row">
-        <div className="d-flex justify-content-evenly">
-          <div className="d-flex flex-wrap">
-            <div className="card card-width">
-              <img src={SpringBoot} alt="SpringBoot" className="imgSize" />
-              Spring Boot
-            </div>
-            <div className="card card-width">
-              <img src={nodejs} alt="nodejs" className="imgSize" /> Node JS
-            </div>
-            <div className="card card-width">
-              <img src={ReactJS} alt="React" className="imgSize" /> React Js
-            </div>
-            <div className="card card-width">
-              <img src={AWS} alt="AWS" className="imgSize" />
-              AWS
-            </div>
-            {/* <div className="card card-width">
+
+      <div className="d-flex justify-content-evenly">
+        <div className="d-flex flex-wrap">
+          <div className="card card-width">
+            <img src={SpringBoot} alt="SpringBoot" className="imgSize" />
+            Spring Boot
+          </div>
+          <div className="card card-width">
+            <img src={nodejs} alt="nodejs" className="imgSize" /> Node JS
+          </div>
+          <div className="card card-width">
+            <img src={ReactJS} alt="React" className="imgSize" /> React Js
+          </div>
+          <div className="card card-width">
+            <img src={AWS} alt="AWS" className="imgSize" />
+            AWS
+          </div>
+          {/* <div className="card card-width">
               <img src={Python} alt="Python" className="imgSize" />
               Python
             </div> */}
+        </div>
+      </div>
+      <div className="col-md-12  d-flex justify-content-center">
+        <div className="d-flex flex-wrap">
+          <div className="card card-width">
+            <img src={mdb} alt="mdb" className="imgSize" />
+            Mongodb
+          </div>
+          <div className="card card-width">
+            <img src={postgres} alt="postgres" className="imgSize" />
+            Postgres
+          </div>
+          <div className="card card-width">
+            <img src={android} alt="android" className="imgSize" />
+            Android Dev
+          </div>
+          <div className="card card-width">
+            <img src={github} alt="github" className="imgSize" />
+            {/* <img src={} alt="" className="imgSize" /> */}
+            MySql
           </div>
         </div>
-        <div className="col-md-12  d-flex justify-content-center">
-          <div className="d-flex flex-wrap">
-            <div className="card card-width">
-              <img src={mdb} alt="mdb" className="imgSize" />
-              Mongodb
-            </div>
-            <div className="card card-width">
-              <img src={postgres} alt="postgres" className="imgSize" />
-              Postgres
-            </div>
-            <div className="card card-width">
-              <img src={android} alt="android" className="imgSize" />
-              Android Dev
-            </div>
-            <div className="card card-width">
-              <img src={github} alt="github" className="imgSize" />
-              {/* <img src={} alt="" className="imgSize" /> */}
-              MySql
-            </div>
+      </div>
+      <div className="col-md-12 d-flex justify-content-center">
+        <div className="d-flex flex-wrap ">
+          <div className="card  card-width">
+            <img src={Java} alt="java" className="imgSize" />
+            JAVA
+          </div>
+          <div className="card card-width">
+            <img src={ml} alt="ml" className="imgSize" />
+            M.L
+          </div>
+          <div className="card card-width">
+            <img src={flutter} alt="flutter" className="imgSize" />
+            Flutter
           </div>
         </div>
-        <div className="col-md-12 d-flex justify-content-center">
-          <div className="d-flex flex-wrap ">
-            <div className="card  card-width">
-              <img src={Java} alt="java" className="imgSize" />
-              JAVA
-            </div>
-            <div className="card card-width">
-              <img src={ml} alt="ml" className="imgSize" />
-              M.L 
-            </div>
-            <div className="card card-width">
-              <img src={flutter} alt="flutter" className="imgSize" />
-              Flutter
-            </div>
+      </div>
+      <div className="col-md-12 mb-3 d-flex justify-content-center">
+        <div className="d-flex flex-wrap ">
+          <div className="card card-width">
+            <img src={javajs} alt="javajs" className="imgSize" />
+            JavaScript
           </div>
-        </div>
-        <div className="col-md-12 mb-3 d-flex justify-content-center">
-          <div className="d-flex flex-wrap ">
-            <div className="card card-width">
-              <img src={javajs} alt="javajs" className="imgSize" />
-              JavaScript
-            </div>
-            <div className="card card-width">
-              <img src={css} alt="css" className="imgSize" />
-              HTML & CSS
-            </div>
+          <div className="card card-width">
+            <img src={css} alt="css" className="imgSize" />
+            HTML & CSS
           </div>
         </div>
       </div>
