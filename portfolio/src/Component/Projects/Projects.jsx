@@ -10,15 +10,15 @@ const Projects = ({ isDarkMode }) => {
       <div className="ro">
       <div className="col-md-12 mx-auto">
       */}
-        <div className="d-flex flex-column justify-content-center">
-          <h1
-            className="mb-5 mt-5 text-center"
-            style={{ fontFamily: "Plus Jakarta Sans", fontWeight: "600" }}
-          >
-            Projects
-          </h1>
-          <Steps isDarkMode={isDarkMode} />
-        </div>
+      <div className="d-flex flex-column justify-content-center mx-5">
+        <h1
+          className="mb-5 mt-5 text-center"
+          style={{ fontFamily: "Plus Jakarta Sans", fontWeight: "600" }}
+        >
+          Projects
+        </h1>
+        <Steps isDarkMode={isDarkMode} />
+      </div>
       {/* 
       </div>
       </div> 

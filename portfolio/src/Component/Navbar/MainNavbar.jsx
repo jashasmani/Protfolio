@@ -1,101 +1,83 @@
 import React from "react";
-import { Navbar, Nav } from "react-bootstrap";
-import { Link } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "./MainNavbar.css";
-import WbSunnyIcon from "@mui/icons-material/WbSunny";
-import Brightness2Icon from "@mui/icons-material/Brightness2";
 import { Button } from "antd";
+import { Link } from "react-router-dom";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import "./MainNavbar.css";
+import Brightness5Icon from "@mui/icons-material/Brightness5";
+import Brightness7Icon from "@mui/icons-material/Brightness7";
+import NightlightIcon from "@mui/icons-material/Nightlight";
 
 function CustomNavbar({ isDarkMode, handleToggle }) {
   return (
     <Navbar
+      collapseOnSelect
       expand="lg"
-      className="pe-4 d-flex justify-content-between"
-      style={{
-        boxShadow: isDarkMode
-          ? "0 4px 6px rgba(255, 255, 255, 0.1)"
-          : "0 4px 6px rgba(0, 0, 0, 0.1)",
-      }}
+      fixed="top"
+      className={`${isDarkMode ? "navbar-dark text-white" : "navbar-light "}`}
     >
-      <Navbar.Brand
-        as={Link}
-        to="/home"
-        className={isDarkMode ? "ms-5 text-light" : "ms-5"}
-      >
-        Jash Asmani
-      </Navbar.Brand>
-      <div className="d-flex align-items-center">
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto d-flex justify-content-between w-100">
-            <Nav.Link
-              as={Link}
-              to="/"
-              id={isDarkMode ? "hd" : "h"}
-              className={isDarkMode ? "text-light" : ""}
-            >
+      <Container>
+        <Navbar.Brand as={Link} to="/home" className="left">
+          Jash Asmani
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="d-flex m-auto">
+            <Nav.Link as={Link} to="/" className="rm-bottom left">
               HOME
             </Nav.Link>
-            <Nav.Link
-              as={Link}
-              to="/about"
-              id={isDarkMode ? "hd" : "h"}
-              className={isDarkMode ? "text-light" : ""}
-            >
-              ABOUT US
+            <Nav.Link as={Link} to="/about" className="rm-bottom left">
+              ABOUT
             </Nav.Link>
-            <Nav.Link
-              as={Link}
-              to="/project"
-              id={isDarkMode ? "hd" : "h"}
-              className={isDarkMode ? "text-light" : ""}
-            >
+            <Nav.Link as={Link} to="/project" className="rm-bottom left">
               PROJECTS
             </Nav.Link>
-            <Nav.Link
-              as={Link}
-              to="/blog"
-              id={isDarkMode ? "hd" : "h"}
-              className={isDarkMode ? "text-light" : ""}
-            >
+            <Nav.Link as={Link} to="/blog" className="rm-bottom left">
               BLOG
             </Nav.Link>
+          </Nav>
+          <Nav>
             <Nav.Link
               as={Link}
-              to="/contact"
-              id={isDarkMode ? "hd" : "h"}
-              className={isDarkMode ? " text-light" : ""}
+              to="/resume"
+              className="rm-bottom left"
+              style={{ marginRight: ".5rem" }}
             >
-              CONTACT US
+              RESUME
             </Nav.Link>
+            <div className="d-flex align-items-center ">
+              <Button
+                type="primary"
+                shape="circle"
+                icon={
+                  isDarkMode ? (
+                    <Brightness7Icon />
+                  ) : (
+                    <NightlightIcon style={{ color: "black" }} />
+                  )
+                }
+                onClick={handleToggle}
+                className="rm-border left mode1"
+                id="mode1"
+              />
+            </div>
+            <div className="d-flex align-items-center ">
+              <Button
+                onClick={handleToggle}
+                className="rm-border left mode1"
+                id="mode2"
+                style={{
+                  background: isDarkMode ? "white" : "black",
+                  color: !isDarkMode ? "white" : "black",
+                }}
+              >
+                {isDarkMode ? "LIGHT" : "DARK"}
+              </Button>
+            </div>
           </Nav>
         </Navbar.Collapse>
-      </div>
-      <div className="d-flex align-items-center">
-        <Button
-          style={{
-            backgroundColor: "transparent",
-            color: "inherit",
-            marginLeft: ".5rem",
-          }}
-          className="rm-border"
-        >
-          Resume
-        </Button>
-
-        <Button
-          type="primary"
-          icon={isDarkMode ? <WbSunnyIcon /> : <Brightness2Icon />}
-          onChange={handleToggle}
-          className="rm-border"
-          style={{
-            backgroundColor: "transparent",
-            border: "0.5px white solid ",
-            color: "inherit",
-            marginLeft: ".5rem",
-          }}
-        />
-      </div>
+      </Container>
     </Navbar>
   );
 }

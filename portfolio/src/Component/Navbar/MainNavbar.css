@@ -1,25 +1,31 @@
+.navbar-dark {
+  background-color: transparent !important;
+  color: #ffffff !important;
+  backdrop-filter: blur(10px);
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.navbar-dark .navbar-brand,
+.navbar-dark .nav-link,
+.navbar-dark .navbar-toggler-icon {
+  color: #ffffff !important;
+}
+
+.navbar-light {
+  background-color: transparent !important;
+  color: #000000 !important;
+  backdrop-filter: blur(10px);
+}
+
 body.dark-mode {
   background-color: #03001c;
   color: #ffffff;
 }
 
-.navbar-dark .navbar-nav .nav-link {
-  color: rgba(255, 255, 255, 0.75);
-}
-
-.navbar-light .navbar-nav .nav-link {
-  color: rgba(0, 0, 0, 0.75);
-}
-
-#h:hover {
-  color: black;
-  background-color: #e2dfd0;
-  border-radius: 0.5rem;
-}
-#hd:hover {
-  color: white;
-  background-color: #0c0c0c;
-  border-radius: 0.5rem;
+body.light-mode {
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .rm-border {
@@ -29,6 +35,36 @@ body.dark-mode {
 .rm-border:hover {
   border: none;
   box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px,
-    rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.655) 0px 4px 6px,
-    rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.675) 0px -3px 5px;
+    rgba(255, 255, 255, 0.12) 0px -12px 30px,
+    rgba(255, 255, 255, 0.655) 0px 4px 6px,
+    rgba(255, 255, 255, 0.17) 0px 12px 13px,
+    rgba(255, 255, 255, 0.675) 0px -3px 5px;
+}
+
+.rm-bottom:hover {
+  border-bottom: 0.2px solid;
+}
+
+#mode1 {
+  background: none;
+  border: none;
+}
+
+@media (max-width: 610px) {
+  .left {
+    margin-left: 1.5rem;
+  }
+  .navbar-toggler  {
+    margin-right: 1.4rem;
+  }
+}
+@media (max-width: 911px) {
+  #mode1 {
+    display: none;
+  }
+}
+@media (min-width: 912px) {
+  #mode2 {
+    display: none;
+  }
 }
