@@ -5,7 +5,7 @@ import Steps from "./Steps";
 const Projects = ({ isDarkMode }) => {
   return (
     <>
-      <section className="container py-5">
+      <section className="container pt-5">
         <div className="d-flex flex-column justify-content-center ">
           <h1
             className="mb-5 mt-5 text-center"
