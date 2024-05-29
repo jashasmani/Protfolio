@@ -38,14 +38,14 @@ function CustomNavbar({ isDarkMode, handleToggle }) {
             </Nav.Link>
           </Nav>
           <Nav>
-            <Nav.Link
+            {/* <Nav.Link
               as={Link}
               to="/resume"
               className="rm-bottom left"
               style={{ marginRight: ".5rem" }}
             >
               RESUME
-            </Nav.Link>
+            </Nav.Link> */}
             <div className="d-flex align-items-center ">
               <Button
                 type="primary"

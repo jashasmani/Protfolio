@@ -4,9 +4,9 @@ import About from "../About/About";
 import Skill from "../Skill/Skill";
 import Projects from "../Projects/Projects";
 import Social from "../RightSide/Social";
+import Footer from "../Footer/Footer";
 
 function First({ isDarkMode }) {
-
   return (
     <>
       <div
@@ -17,6 +17,7 @@ function First({ isDarkMode }) {
         <Projects isDarkMode={isDarkMode} />
         <Skill isDarkMode={isDarkMode} />
         <Social />
+        <Footer isDarkMode={isDarkMode} />
       </div>
     </>
   );

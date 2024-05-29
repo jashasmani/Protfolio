@@ -87,14 +87,19 @@ const Main = ({ isDarkMode }) => {
                         },
                       }}
                     >
-                      <Button
-                        type="primary"
-                        size="middle"
-                        className="rm-border"
-                        onClick={() => navigate("/contact")}
+                      <a
+                        href="https://github.com/jashasmani/Img/blob/8019783b7a173a75b94be917828f55303d00606e/IT008_JASH_ASMANI_Resume.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
-                        Hire Me
-                      </Button>
+                        <Button
+                          type="primary"
+                          size="middle"
+                          className="rm-border-w"
+                        >
+                          Resume
+                        </Button>
+                      </a>
                       <Button
                         type="primary"
                         size="middle"
@@ -124,14 +129,19 @@ const Main = ({ isDarkMode }) => {
                       },
                     }}
                   >
-                    <Button
-                      type="primary"
-                      size="middle"
-                      className="rm-border-w"
-                      onClick={() => navigate("/contact")}
+                    <a
+                      href="https://github.com/jashasmani/Img/blob/8019783b7a173a75b94be917828f55303d00606e/IT008_JASH_ASMANI_Resume.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
-                      Hire Me
-                    </Button>
+                      <Button
+                        type="primary"
+                        size="middle"
+                        className="rm-border-w"
+                      >
+                        Resume
+                      </Button>
+                    </a>
                     <Button
                       type="primary"
                       size="middle"
@@ -159,28 +169,6 @@ const Main = ({ isDarkMode }) => {
             />
           </div>
         </div>
-
-        {/* <ConfigProvider
-            
-            theme={{
-              components: {
-                Button: {
-                  colorPrimary: `linear-gradient(135deg, ${colors.join(", ")})`,
-                  colorPrimaryHover: `linear-gradient(135deg, ${getHoverColors(
-                    colors
-                  ).join(", ")})`,
-                  colorPrimaryActive: `linear-gradient(135deg, ${getActiveColors(
-                    colors
-                  ).join(", ")})`,
-                  lineWidth: 0,
-                },
-              },
-            }}
-          >
-            <Button type="primary" size="large">
-              Gradient 
-            </Button>
-          </ConfigProvider> */}
       </section>
     </>
   );

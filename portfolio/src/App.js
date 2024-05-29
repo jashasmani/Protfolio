@@ -6,6 +6,8 @@ import Contact from "./Component/Contact/Contact";
 import First from "./Component/First/First";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Moreproject from "./Component/MoreProject/Moreproject";
+import AboutMepage from "./Component/About Me Page/AboutMepage";
+import Blog from "./Component/Blog/Blog";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(true);
@@ -31,7 +33,9 @@ function App() {
         <Routes>
           <Route path="/" element={<First isDarkMode={isDarkMode}/>} />
           <Route path="/home" element={<Main isDarkMode={isDarkMode}/>} />
+          <Route path="/blog" element={<Blog isDarkMode={isDarkMode}/>} />
           <Route path="/contact" element={<Contact isDarkMode={isDarkMode}/>} />
+          <Route path="/about" element={<AboutMepage isDarkMode={isDarkMode}/>} />
           <Route
             path="/project"
             element={
