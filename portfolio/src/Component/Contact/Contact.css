@@ -1,15 +1,18 @@
-/* .container {
-  max-width: 600px;
+.content {
+  width: 600px;
   padding: 2rem 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   border-radius: 5px;
   backdrop-filter: blur(14px);
   background-color: rgba(255, 255, 255, 0.2);
   margin-bottom: 5rem;
-
+  margin-top: 8rem;
 }
 
 .form-label {
@@ -51,4 +54,33 @@
 
 .custom-textfield .MuiInputLabel-root.Mui-focused {
   color: white;
-} */
+}
+
+.custom-textfield-b {
+  width: 100%;
+}
+.custom-textfield-b .MuiInputBase-root {
+  color: black;
+}
+
+.custom-textfield-b .MuiInputLabel-root {
+  color: black;
+}
+
+.custom-textfield-b .MuiFilledInput-underline:before {
+  border-bottom-color: black;
+}
+
+.custom-textfield-b .MuiFilledInput-underline:after {
+  border-bottom-color: black;
+}
+
+.custom-textfield-b .MuiInputLabel-root.Mui-focused {
+  color: black;
+}
+
+@media (max-width: 420px) {
+  .content {
+    padding: 1.5rem;
+  }
+}

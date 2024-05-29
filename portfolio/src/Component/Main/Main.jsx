@@ -1,27 +1,33 @@
 import React, { useState, useEffect } from "react";
 import Profile from "./DP_jash.jpg";
-import MainNavbar from "../Navbar/MainNavbar";
-import { Button } from "antd";
 import "./Background.css";
 import "./main.css";
 import Background from "./Background";
+import { TinyColor } from "@ctrl/tinycolor";
+import { Button, ConfigProvider } from "antd";
+import { useNavigate } from "react-router-dom";
+import {
+  colors1,
+  colorsSet,
+  getHoverColors,
+  getActiveColors,
+} from "../Button/Custom_Button";
 
-const Main = ({ isDarkMode, handleToggle }) => {
+const Main = ({ isDarkMode }) => {
   const [visibleChars, setVisibleChars] = useState(0);
+  const navigate = useNavigate();
+
   const name = "JASH ASMANI";
 
   useEffect(() => {
-    // Animation interval to reveal characters
     const interval = setInterval(() => {
       setVisibleChars((prev) => (prev < name.length ? prev + 1 : prev));
     }, 300);
 
-    // Reset the visible characters every 5 seconds
     const restartInterval = setInterval(() => {
       setVisibleChars(0);
     }, 5000);
 
-    // Clean up intervals on component unmount
     return () => {
       clearInterval(interval);
       clearInterval(restartInterval);
@@ -30,7 +36,7 @@ const Main = ({ isDarkMode, handleToggle }) => {
 
   return (
     <>
-      <section className="container">
+      <section className="container" style={{ padding: "6rem 0" }}>
         <Background />
         <div className="d-flex flex-column flex-md-row justify-content-center align-items-center overlay-content backimage">
           <div
@@ -42,15 +48,12 @@ const Main = ({ isDarkMode, handleToggle }) => {
             <div className="container">
               <h6 className="title">
                 I'M{" "}
-                <span
-                  className="sub-title"
-                  style={{
-                    color: isDarkMode ? "#ffffff" : "#000000",
-                    paddingLeft: "8px",
-                  }}
-                >
+                <span className={isDarkMode ? "sub-title-w" : "sub-title-b"}>
                   {name.split("").map((char, index) => (
-                    <span key={index}>
+                    <span
+                      key={index}
+                      className={isDarkMode ? "sub-title-w" : "sub-title-b"}
+                    >
                       {index < visibleChars
                         ? char === " "
                           ? "\u00A0"
@@ -64,36 +67,81 @@ const Main = ({ isDarkMode, handleToggle }) => {
                 Full Stack Developer & Enterprise Solutions Expert
               </h2>
               <div className="d-flex justify-content-evenly">
-                <Button
-                  style={{
-                    backgroundColor: "transparent",
-                    border: "0.5px white solid",
-                    color: "inherit",
-                    marginLeft: ".5rem",
-                  }}
-
-                  className="rm-border"
-                >
-                  Hire Me
-                </Button>
-                <Button
-                  style={{
-                    backgroundColor: "transparent",
-                    border: "0.5px white solid",
-                    color: "inherit",
-                    marginLeft: ".5rem",
-                  }}
-                  className="rm-border"
-
-                  // type="button"
-                  // className={
-                  //   isDarkMode
-                  //     ? "btn btn-outline-light btn-sm"
-                  //     : "btn btn-outline-dark btn-sm"
-                  // }
-                >
-                  Contect Me
-                </Button>
+                {isDarkMode ? (
+                  <>
+                    <ConfigProvider
+                      theme={{
+                        components: {
+                          Button: {
+                            colorPrimary: `linear-gradient(135deg, ${colorsSet.join(
+                              ", "
+                            )})`,
+                            colorPrimaryHover: `linear-gradient(135deg, ${getHoverColors(
+                              colorsSet
+                            ).join(", ")})`,
+                            colorPrimaryActive: `linear-gradient(135deg, ${getActiveColors(
+                              colorsSet
+                            ).join(", ")})`,
+                            lineWidth: 0,
+                          },
+                        },
+                      }}
+                    >
+                      <Button
+                        type="primary"
+                        size="middle"
+                        className="rm-border"
+                        onClick={() => navigate("/contact")}
+                      >
+                        Hire Me
+                      </Button>
+                      <Button
+                        type="primary"
+                        size="middle"
+                        className="rm-border"
+                        onClick={() => navigate("/contact")}
+                      >
+                        Contact Me
+                      </Button>
+                    </ConfigProvider>
+                  </>
+                ) : (
+                  <ConfigProvider
+                    theme={{
+                      components: {
+                        Button: {
+                          colorPrimary: `linear-gradient(135deg, ${colors1.join(
+                            ", "
+                          )})`,
+                          colorPrimaryHover: `linear-gradient(135deg, ${getHoverColors(
+                            colors1
+                          ).join(", ")})`,
+                          colorPrimaryActive: `linear-gradient(135deg, ${getActiveColors(
+                            colors1
+                          ).join(", ")})`,
+                          lineWidth: 0,
+                        },
+                      },
+                    }}
+                  >
+                    <Button
+                      type="primary"
+                      size="middle"
+                      className="rm-border-w"
+                      onClick={() => navigate("/contact")}
+                    >
+                      Hire Me
+                    </Button>
+                    <Button
+                      type="primary"
+                      size="middle"
+                      className="rm-border-w"
+                      onClick={() => navigate("/contact")}
+                    >
+                      Contact Me
+                    </Button>
+                  </ConfigProvider>
+                )}
               </div>
             </div>
           </div>
@@ -103,7 +151,6 @@ const Main = ({ isDarkMode, handleToggle }) => {
               alt="Profile"
               className="my-3"
               style={{
-                marginLeft: "1rem",
                 maxWidth: "250px",
                 maxHeight: "250px",
                 border: "6px solid white",
@@ -112,6 +159,28 @@ const Main = ({ isDarkMode, handleToggle }) => {
             />
           </div>
         </div>
+
+        {/* <ConfigProvider
+            
+            theme={{
+              components: {
+                Button: {
+                  colorPrimary: `linear-gradient(135deg, ${colors.join(", ")})`,
+                  colorPrimaryHover: `linear-gradient(135deg, ${getHoverColors(
+                    colors
+                  ).join(", ")})`,
+                  colorPrimaryActive: `linear-gradient(135deg, ${getActiveColors(
+                    colors
+                  ).join(", ")})`,
+                  lineWidth: 0,
+                },
+              },
+            }}
+          >
+            <Button type="primary" size="large">
+              Gradient 
+            </Button>
+          </ConfigProvider> */}
       </section>
     </>
   );

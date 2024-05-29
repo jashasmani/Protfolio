@@ -29,7 +29,8 @@ body.light-mode {
 }
 
 .rm-border {
-  border: 0.5px white solid;
+  border: none;
+  /* border: 0.5px white solid; */
 }
 
 .rm-border:hover {
@@ -41,8 +42,15 @@ body.light-mode {
     rgba(255, 255, 255, 0.675) 0px -3px 5px;
 }
 
+.rm-border-w:hover {
+  border: none;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
 .rm-bottom:hover {
   border-bottom: 0.2px solid;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
 #mode1 {
@@ -54,7 +62,7 @@ body.light-mode {
   .left {
     margin-left: 1.5rem;
   }
-  .navbar-toggler  {
+  .navbar-toggler {
     margin-right: 1.4rem;
   }
 }

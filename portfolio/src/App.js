@@ -1,12 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import Main from "./Component/Main/Main";
-import About from "./Component/About/About";
 import MainNavbar from "./Component/Navbar/MainNavbar";
-import Skill from "./Component/Skill/Skill";
-import Projects from "./Component/Projects/Projects";
-import Social from "./Component/RightSide/Social";
-import Contect from "./Component/Contact/Contact";
+import Contact from "./Component/Contact/Contact";
 import First from "./Component/First/First";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Moreproject from "./Component/MoreProject/Moreproject";
@@ -33,9 +29,9 @@ function App() {
       <BrowserRouter>
         <MainNavbar isDarkMode={isDarkMode} handleToggle={handleToggle} />
         <Routes>
-          <Route path="/" element={<First />} />
-          <Route path="/home" element={<Main />} />
-          <Route path="/contact" element={<Contect />} />
+          <Route path="/" element={<First isDarkMode={isDarkMode}/>} />
+          <Route path="/home" element={<Main isDarkMode={isDarkMode}/>} />
+          <Route path="/contact" element={<Contact isDarkMode={isDarkMode}/>} />
           <Route
             path="/project"
             element={

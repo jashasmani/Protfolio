@@ -1,14 +1,12 @@
-.container-1 {
-  margin: 0 auto;
-  text-align: left;
-  padding: 20px;
-}
 
 .about-text {
-  padding-left: "3rem";
-  font-size: "1.2rem";
-  font-family: "Quicksand";
+  font-size: 1.2rem;
+  font-family: 'Quicksand';
   font-weight: 500;
+}
+
+.highlight {
+  font-weight: bold;
 }
 
 @media (max-width: 400px) {
