@@ -9,16 +9,18 @@ import Footer from "../Footer/Footer";
 function First({ isDarkMode }) {
   return (
     <>
-      <div
-        style={{ background: isDarkMode ? "dark" : "light", height: "100vh" }}
-      >
-        <Main isDarkMode={isDarkMode} />
-        <About isDarkMode={isDarkMode} />
-        <Projects isDarkMode={isDarkMode} />
-        <Skill isDarkMode={isDarkMode} />
-        <Social />
-        <Footer isDarkMode={isDarkMode} />
-      </div>
+      <main>
+        <div
+          style={{ background: isDarkMode ? "dark" : "light", height: "100vh" }}
+        >
+          <Main isDarkMode={isDarkMode} />
+          <About isDarkMode={isDarkMode} />
+          <Projects isDarkMode={isDarkMode} />
+          <Skill isDarkMode={isDarkMode} />
+          <Social />
+          <Footer isDarkMode={isDarkMode} />
+        </div>
+      </main>
     </>
   );
 }

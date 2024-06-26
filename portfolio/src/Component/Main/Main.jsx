@@ -95,7 +95,7 @@ const Main = ({ isDarkMode }) => {
                         <Button
                           type="primary"
                           size="middle"
-                          className="rm-border-w"
+                          className="rm-border"
                         >
                           Resume
                         </Button>

@@ -1,5 +1,5 @@
 import React from "react";
-import Steps from "../Projects/Steps";
+import StopsMoreProject from "../Projects/StopsMoreProject";
 import Footer from "../Footer/Footer";
 
 const Moreproject = ({ isDarkMode }) => {
@@ -12,7 +12,7 @@ const Moreproject = ({ isDarkMode }) => {
         >
           Projects
         </h1>
-        <Steps isDarkMode={isDarkMode} />
+        <StopsMoreProject isDarkMode={isDarkMode} />
         <Footer/>
       </div>
     </section>
