@@ -6,27 +6,58 @@ import {
   description2,
   TechCurrent,
   TSA,
-  ReadMeWiz
+  ReadMeWiz,
 } from "./Description";
 import Brightness1OutlinedIcon from "@mui/icons-material/Brightness1Outlined";
 
 const StepsReact = ({ isDarkMode }) => {
   const items = [
     {
-      title: <h2 style={{ fontWeight: "600" }}>Interview-Catalyst</h2>,
-      description,
+      title: (
+        <h3 style={{ fontWeight: "600" }}>
+          <a
+            href="https://interview-catalyst.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "white",textDecoration:'none' }}
+          >
+            Interview-Catalyst
+          </a>
+        </h3>
+      ),
       status: "finish",
+      description: description,
       icon: <Brightness1OutlinedIcon />,
     },
     {
-      title: <h2 style={{ fontWeight: "600" }}>SkyOps-Pro</h2>,
+      title: (
+        <h3 style={{ fontWeight: "600" }}>
+          <a
+            href="https://github.com/jashasmani/SkyOps-Pro"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "white", textDecoration:'none' }}
+          >
+            SkyOps-Pro
+          </a>
+        </h3>
+      ),
       status: "finish",
       description: description1,
       icon: <Brightness1OutlinedIcon />,
     },
     {
       title: (
-        <h2 style={{ fontWeight: "600" }}>ReadMeWiz</h2>
+        <h3 style={{ fontWeight: "600" }}>
+          <a
+            href="https://read-me-wiz.vercel.app/home"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "white", textDecoration:'none' }}
+          >
+            ReadMeWiz
+          </a>
+        </h3>
       ),
       status: "finish",
       description: ReadMeWiz,
@@ -34,20 +65,51 @@ const StepsReact = ({ isDarkMode }) => {
     },
     {
       title: (
-        <h2 style={{ fontWeight: "600" }}>TWITTER-SENTIMENT-ANALYSIS-NLP</h2>
+        <h3 style={{ fontWeight: "600" }}>
+          <a
+            href="https://twitter-sentiment-analysis-nlp.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "white", textDecoration:'none' }}
+          >
+            TWITTER-SENTIMENT-ANALYSIS-NLP
+          </a>
+        </h3>
       ),
       status: "finish",
       description: TSA,
       icon: <Brightness1OutlinedIcon />,
     },
     {
-      title: <h2 style={{ fontWeight: "600" }}>Tech Current</h2>,
+      title: (
+        <h3 style={{ fontWeight: "600" }}>
+          <a
+            href="https://tech-current.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "white", textDecoration:'none' }}
+          >
+            Tech Current
+          </a>
+        </h3>
+      ),
       status: "finish",
       description: TechCurrent,
       icon: <Brightness1OutlinedIcon />,
     },
     {
-      title: <h2 style={{ fontWeight: "600" }}>Grocery Store</h2>,
+      title: (
+        <h3 style={{ fontWeight: "600" }}>
+          <a
+            href="https://github.com/jashasmani/Grocery-Store-JDBC"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "white", textDecoration:'none' }}
+          >
+            Grocery Store
+          </a>
+        </h3>
+      ),
       status: "finish",
       description: description2,
       icon: <Brightness1OutlinedIcon />,

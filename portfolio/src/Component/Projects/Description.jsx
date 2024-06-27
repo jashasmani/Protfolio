@@ -1,8 +1,16 @@
 import React from "react";
-
-import im1 from "./image.png";
-import airline from "./file.png";
-import grocery from "./grocery.png";
+import { SiFlask } from "react-icons/si";
+import { FaReact } from "react-icons/fa";
+import { IoLogoNodejs } from "react-icons/io5";
+import { SiGooglegemini } from "react-icons/si";
+import { SiExpress } from "react-icons/si";
+import { BiLogoMongodb } from "react-icons/bi";
+import { TbBrandMysql } from "react-icons/tb";
+import { SiSpringboot } from "react-icons/si";
+import { SiMicropython } from "react-icons/si";
+import { FaHtml5 } from "react-icons/fa";
+import { FaCss3 } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io";
 
 const description = (
   <div className="arrange">
@@ -19,6 +27,12 @@ const description = (
       <span className="highlight">ReactJS</span> for building user interfaces,
       and <span className="highlight">NodeJS</span> for server-side operations,
       enhancing efficiency and scalability.
+      <div style={{ marginTop: "1rem" }}>
+        <FaReact style={{ fontSize: "24px", marginRight: "10px" }} />
+        <IoLogoNodejs style={{ fontSize: "24px", marginRight: "10px" }} />
+        <SiExpress style={{ fontSize: "24px", marginRight: "10px" }} />
+        <BiLogoMongodb style={{ fontSize: "24px", marginRight: "10px" }} />
+      </div>
     </h5>
     {/* <div className="d-flex  flex-row justify-content-center">
       <img src={im1} alt="img" className="project-img" />
@@ -33,7 +47,7 @@ const description1 = (
     </div> */}
     <h5 className="project-info">
       <span className="highlight">SkyOps Pro</span> is an{" "}
-      <span className="highlight">Airline Management System</span> using React
+      <span className="highlight">Airline Management System</span> using <span className="highlight">React </span>
       for the frontend and <span className="highlight">Spring Boot</span> for
       the backend. It supports User and Admin roles, offering features like{" "}
       <span className="highlight">login</span>,{" "}
@@ -43,6 +57,11 @@ const description1 = (
       for users, and flight management for admins. The system uses{" "}
       <span className="highlight">MySQL</span> for the database, enhancing
       efficiency in airline operations.
+      <div style={{ marginTop: "1rem" }}>
+        <FaReact style={{ fontSize: "24px", marginRight: "10px" }} />
+        <TbBrandMysql style={{ fontSize: "24px", marginRight: "10px" }} />
+        <SiSpringboot  style={{ fontSize: "24px", marginRight: "10px" }} />
+      </div>
     </h5>
   </div>
 );
@@ -57,6 +76,12 @@ const ReadMeWiz = (
       project documentation by generating README.md files automatically. Users
       can efficiently create and update project documentation, enhancing project
       management and collaboration.
+      <div style={{ marginTop: "1rem" }}>
+        <FaReact style={{ fontSize: "24px", marginRight: "10px" }} />
+        <SiFlask style={{ fontSize: "24px", marginRight: "10px" }} />
+        <SiMicropython style={{ fontSize: "24px", marginRight: "10px" }} />
+        <SiGooglegemini style={{ fontSize: "24px", marginRight: "10px" }} />
+      </div>
     </h5>
   </div>
 );
@@ -72,6 +97,11 @@ const TSA = (
       <span className="highlight">React</span> for the frontend and{" "}
       <span className="highlight">Flask</span> for the backend, enabling
       user-friendly interaction and efficient data processing.
+      <div style={{ marginTop: "1rem" }}>
+        <FaReact style={{ fontSize: "24px", marginRight: "10px" }} />
+        <SiFlask style={{ fontSize: "24px", marginRight: "10px" }} />
+        <SiMicropython style={{ fontSize: "24px", marginRight: "10px" }} />
+      </div>
     </h5>
   </div>
 );
@@ -87,6 +117,11 @@ const description2 = (
       select, and purchase groceries online, with{" "}
       <span className="highlight">JDBC</span> managing database connections for
       user data, inventory, and order processing.
+      <div style={{ marginTop: "1rem" }}>
+        <FaHtml5 style={{ fontSize: "24px", marginRight: "10px" }} />
+        <FaCss3 style={{ fontSize: "24px", marginRight: "10px" }} />
+        <IoLogoJavascript style={{ fontSize: "24px", marginRight: "10px" }} />
+      </div>
     </h5>
 
     {/* <div className="d-flex  flex-row justify-content-center">
@@ -106,6 +141,11 @@ const TechCurrent = (
       efficiently by <span className="highlight">aggregating content</span> from
       various sources, providing a{" "}
       <span className="highlight">seamless user experience</span>.
+      <div style={{ marginTop: "1rem" }}>
+        <FaReact style={{ fontSize: "24px", marginRight: "10px" }} />
+        <SiFlask style={{ fontSize: "24px", marginRight: "10px" }} />
+        <SiMicropython style={{ fontSize: "24px", marginRight: "10px" }} />
+      </div>
     </h5>
   </div>
 );
